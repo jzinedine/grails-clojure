@@ -67,7 +67,7 @@ The Clojure plugin adds support for easily accessing Clojure code in a Grails ap
     }
 
     private void addDynamicProperty(classes) {
-        def config = org.codehaus.groovy.grails.commons.ConfigurationHolder.config
+        def config = grails.util.Holders.config
         def clojurePropertyName = config.grails?.clojure?.dynamicPropertyName
         if(clojurePropertyName) {
             def propName = clojurePropertyName[0].toUpperCase()
