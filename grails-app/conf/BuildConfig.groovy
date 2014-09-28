@@ -20,8 +20,6 @@ grails.project.dependency.resolution = {
 
     repositories {
         inherits true // Whether to inherit repository definitions from plugins
-
-        mavenRepo 'http://build.clojure.org/releases'
         grailsPlugins()
         grailsHome()
         mavenLocal()
@@ -30,7 +28,7 @@ grails.project.dependency.resolution = {
     }
 
     dependencies {
-         runtime 'org.clojure:clojure:1.5.1'
+         runtime 'org.clojure:clojure:1.6.0'
     }
 
     plugins {
